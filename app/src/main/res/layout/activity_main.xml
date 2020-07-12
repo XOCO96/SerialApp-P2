@@ -8,13 +8,15 @@
 
     <TextView
         android:id="@+id/TextViewReci"
-        android:layout_width="278dp"
-        android:layout_height="154dp"
+        android:layout_width="297dp"
+        android:layout_height="184dp"
+        android:gravity="bottom"
         android:text="Esperando informacion!"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCl" />
 
     <Button

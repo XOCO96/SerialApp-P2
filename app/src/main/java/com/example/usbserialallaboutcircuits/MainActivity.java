@@ -12,10 +12,13 @@ import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbDeviceConnection;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.HorizontalScrollView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         BtnDetener = (Button)findViewById(R.id.buttonSt);
         BtnBorrar = (Button)findViewById(R.id.buttonCl);
         TxVwPantalla = (TextView)findViewById(R.id.TextViewReci);
+        TxVwPantalla.setMovementMethod(new ScrollingMovementMethod());
+
         setUiEnabled(false);
         IntentFilter filter = new IntentFilter();
         filter.addAction(ACTION_USB_PERMISSION);
